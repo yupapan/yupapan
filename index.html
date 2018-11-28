@@ -1,0 +1,552 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/CSS" href="../CSS/mycss.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="bg-img">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #f1f1f1;
+                padding: 20px;
+                font-family: Arial;
+            }
+            /* Center website */
+            
+            .main {
+                max-width: 1000px;
+                margin: auto;
+            }
+            
+            h1 {
+                font-size: 50px;
+                word-break: break-all;
+            }
+            
+            .row {
+                margin: 10px -16px;
+            }
+            /* Add padding BETWEEN each column */
+            
+            .row,
+            .row>.column {
+                padding: 8px;
+            }
+            /* Create three equal columns that floats next to each other */
+            
+            .column {
+                float: left;
+                width: 33.33%;
+                display: none;
+                /* Hide all elements by default */
+            }
+            /* Clear floats after rows */
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Content */
+            
+            .content {
+                background-color: white;
+                padding: 10px;
+            }
+            /* The "show" class is added to the filtered elements */
+            
+            .show {
+                display: block;
+            }
+            /* Style the buttons */
+            
+            .btn {
+                border: none;
+                outline: none;
+                padding: 12px 16px;
+                background-color: white;
+                cursor: pointer;
+            }
+            
+            .btn:hover {
+                background-color: #ddd;
+            }
+            
+            .btn.active {
+                background-color: #666;
+                color: white;
+            }
+            
+            input[type=text] {
+                width: 130px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+            
+            input[type=text]:focus {
+                width: 100%;
+            }
+        </style>
+
+        </head>
+
+        <body>
+            <div class="main">
+                <article>
+
+                    <h1>
+
+                        <div class="header">
+                            <center>
+                                <img src="../รูป/logo.png" alt="Denim Jeans" style="width:50%">
+                            </center>
+                        </div>
+
+
+                        <a href="Singup.html">
+                            <button>ลงชื่อเข้าใช้  </button> </a>
+                        <a href="Singup2.html">
+                            <button>ลงทะเบียน </button></a>
+
+
+
+                        <input type="text" name="search" placeholder="Search..">
+
+
+
+
+                    </h1>
+                    <script>
+                        window.onscroll = function() {
+                            myFunction()
+                        };
+
+                        var navbar = document.getElementById("navbar");
+                        var sticky = navbar.offsetTop;
+
+                        function myFunction() {
+                            if (window.pageYOffset >= sticky) {
+                                navbar.classList.add("sticky")
+                            } else {
+                                navbar.classList.remove("sticky");
+                            }
+                        }
+                    </script>
+                    <div class="content">
+                </article>
+                <hr>
+
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../รูป/หน้าหลัก1.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../รูป/หน้าหลัก2.jpg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../รูป/หน้าหลัก3.jpg" style="width:100%">
+
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <br>
+                <article>
+                    <center>
+                        <section class="lefSide">
+                            <a href="promotion1.html">
+                                <img src="../รูป/promotion1.jpg" alt="Mountains" style="width:100%">
+                            </a>
+                        </section>
+
+                        <section class="righrSide">
+                            <a href="promotion2.html">
+                                <img src="../รูป/promotion2.jpg" alt="Mountains" style="width:100%">
+                            </a>
+                        </section>
+                    </center>
+                </article>>
+                <article>
+                    <center>
+                        <section class="lefSide">
+                            <a href="promotion3.html">
+                                <img src="../รูป/ลด/promotion3.jpg" alt="Mountains" style="width:100%">
+                            </a>
+                        </section>
+
+
+                        <section class="righrSide">
+                            <a href="promotion4.html">
+                                <img src="../รูป/ลด/promotion4.jpg" alt="Mountains" style="width:100%">
+                            </a>
+                        </section>
+                    </center>
+                </article>
+                <br>
+
+                <div id="myBtnContainer">
+
+                    <div class="dropdown">
+                        <button class="dropbtn" class="btn active" onclick="filterSelection('all') "> หน้าแรก</button>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="promotion1.html">โปรโมชั่น</a>
+                            <a href="สกินแคร์.html">สกินแคร์</a>
+                            <a href="เครื่องสำอาง.html"> เครื่องสำอาง</a>
+                            <a href="อาหารเสริม.html">อาหารเสริม</a>
+                        </div>
+                    </div>
+
+                    <button class="btn" onclick="filterSelection('nature')"> สกินแคร์</button>
+                    <button class="btn" onclick="filterSelection('cars')"> เครื่องสำอาง</button>
+                    <button class="btn" onclick="filterSelection('people')">อาหารเสริม</button>
+
+
+                </div>
+
+
+                <div class="row">
+                    <h1>
+                        <center>
+                            <font color="red" side="3"> ของใหม่มาแรง ลดแรงก่อนใคร!! </font>
+                            <br> สินค้าแนะนำ
+                        </center>
+                    </h1>
+
+                    <div class="column nature">
+                        <div class="card">
+                            <img src="../รูป/สกินแคร์/รูปใหม่/1.jpg" alt="Mountains" style="width:100%">
+                            <h4>Laneige</h4>
+                            <p>แพ็คคู่ Laneige Water Sleeping Mask (15ml x2) สลีปปิ้งมาสก์ยอดนิยมที่ขายดีตลอดกาล เพิ่มเทคโนโลยีในการซ่อมแซมผิวที่เสียหายระหว่างวัน เติมความชุ่มชื้นตลอดคืน เพื่อผิวสดชื่นเปล่งปลั่ง กระจ่างใส </p>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="card">
+                            <img src="../รูป/สกินแคร์/รูปใหม่/2.jpg" alt="Lights" style="width:100%">
+                            <h4>It's Skin</h4>
+                            <p>t's Skin Power 10 Formula VC Effector 10ml (Mini size) เซรั่มบำรุงผิวที่อุดมไปด้วยวิตามินซีเข้มข้น ช่วยลดความหมองคล้ำ คืนความกระจ่างใสแก่ผิวหน้าอย่างอ่อนโยน ลดเลือนจุดด่างดำ ฝ้า กระ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="card">
+                            <img src="../รูป/สกินแคร์/รูปใหม่/3.jpg" alt="Nature" style="width:100%">
+                            <h4>Biotherm</h4>
+                            <p>Biotherm Life Plankton Essence 14ml บำรุงอย่างเต็มประสิทธิภาพด้วย Life Plankton เข้มข้น สัมผัสความมหัศจรรย์แห่งผิว 8 ประการ ฟื้นบำรุงผิวให้เปล่งปลั่งกระจ่างใสรูขุมขนเล็กลง ผิวเนียนละเอียดและดูอ่อนเยาว์ </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column cars">
+
+                        <div class="card">
+                            <img src="../รูป/เครื่องสำอาง/รูปใหม่/1.jpg" alt="Mountains" style="width:100%">
+                            <h4>Maybelline</h4>
+                            <p>Maybelline Volum' Express the Hypercurl Mascara Waterproof #Black นวัตกรรมใหม่ มาสคาร่าเนื้อเจลสูตรกันน้ำ ขนตาหนาขึ้นมากกว่า 4 เท่า งอนโค้งงอนยาวนาน 24 ชั่วโมง </p>
+                        </div>
+                        </section>
+                    </div>
+                    <div class="column cars">
+
+                        <div class="card">
+                            <img src="../รูป/เครื่องสำอาง/รูปใหม่/2.jpg" alt="Lights" style="width:100%">
+                            <h4>Laura Mercier</h4>
+                            <p>Laura Mercier Loose Setting Powder Translucent 3.5g(Tester) แป้งฝุ่นขายดีอันดับ 1 ในหลายประเทศทั่วโลก อณูละเอียดเนียนนุ่มดุจใยไหม เกลี่ยง่ายทุกสัมผัส
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column cars">
+
+                        <div class="card">
+                            <img src="../รูป/เครื่องสำอาง/รูปใหม่/3.jpg" alt="Nature" style="width:100%">
+                            <h4>Eglips</h4>
+                            <p>ฮอตสุดจากเกาหลี! แป้งพัฟสูตรเบลอรูขุมขนและริ้วรอย Eglips Blur Powder Pact #23 มอบการบำรุงด้วยส่วนผสมจากสารสกัดธรรมชาติ เนื้อแป้งบางเบาสบายผิว </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column people">
+                        <div class="card">
+                            <img src="../รูป/อาหารเสริม/รูปใหม่/1.jpg" alt="Mountains" style="width:100%">
+                            <h4>DHC</h4>
+                            <p>แพ็คคู่ DHC-Supplement Vitamin C 60 Days ( 60Days x 2) ช่วยให้ผิวพรรณสดใส มีน้ำมีนวล ช่วยทำให้เลือดไหลเวียนดีขึ้น และยังช่วยให้ใบหน้าดูผุดผ่อง ไม่หมองคล้ำ โดยเฉพาะผู้สูบบุหรี่และดื่มเหล้า </p>
+                        </div>
+
+                    </div>
+                    <div class="column people">
+                        <div class="card">
+                            <img src="../รูป/อาหารเสริม/รูปใหม่/2.jpg" alt="Lights" style="width:100%">
+                            <h4>DHC</h4>
+                            <p>DHC-Supplement Hyaluronic Acid 20 Days คืนสู่ความเป็นหนุ่มสาว ผิวขาว เนียนใส อมชมพู เปล่งปลั่ง ต่อต้านริ้วรอย ต่อต้านมะเร็ง สำหรับผู้ที่อยากมีผิวพรรณบนใบหน้าขาวใส เต่งตึง ไม่แห้งกร้าน</p>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="card">
+                            <img src="../รูป/อาหารเสริม/รูปใหม่/3.jpg" alt="Nature" style="width:100%">
+                            <h4>DHC</h4>
+                            <p>DHC-Supplement Natural Vitamin E Supplement 30 Days ผลิตภัณฑ์เสริมอาหารวิตามินอี เป็นสารต้านอนุมูลอิสระชั้นดี ช่วยลดเลือนแผลเป็น จุดด่างดำจากสิว คืนความอ่อนเยาว์ให้ผิวเนียนนุ่มชุ่มชื้น
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                </div>
+
+                <script>
+                    filterSelection("all")
+
+                    function filterSelection(c) {
+                        var x, i;
+                        x = document.getElementsByClassName("column");
+                        if (c == "all") c = "";
+                        for (i = 0; i < x.length; i++) {
+                            w3RemoveClass(x[i], "show");
+                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                        }
+                    }
+
+                    function w3AddClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            if (arr1.indexOf(arr2[i]) == -1) {
+                                element.className += " " + arr2[i];
+                            }
+                        }
+                    }
+
+                    function w3RemoveClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            while (arr1.indexOf(arr2[i]) > -1) {
+                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                            }
+                        }
+                        element.className = arr1.join(" ");
+                    }
+
+
+                    // Add active class to the current button (highlight it)
+                    var btnContainer = document.getElementById("myBtnContainer");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function() {
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+
+        </body>
+        </div>
+    </div>
+
+</html>
